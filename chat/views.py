@@ -6,7 +6,7 @@ def index(request):
     return render(request, 'chat/index.html')
 
 
-def room(request, room_name):
+def room(request, group_name):
     return render(request, 'chat/room.html', {
-        'room_name': room_name
+        'room_name': group_name
     })
